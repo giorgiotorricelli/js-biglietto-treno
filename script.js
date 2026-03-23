@@ -1,7 +1,33 @@
-const kilometersAsString = prompt("inserisci la distanza che vuoi percorrere (in kilometri): ");
+let kilometersAsString;
+
+while (true) {
+    kilometersAsString = prompt("inserisci la distanza che vuoi percorrere (in kilometri): ");
+    let km = parseInt(kilometersAsString);
+
+    if (km < 5 || isNaN(km)) {
+        console.log("La distanza minima per viaggio è di 5km");
+    } else {
+        break;
+    }
+}
+
 const kilometersAsInt = parseInt(kilometersAsString);
 
-const ageAsString = prompt("inserisci la tua età: ");
+let ageAsString
+
+while (true) {
+    ageAsString = prompt("inserisci la tua età: ");
+    let age = parseInt(ageAsString);
+
+    if (age <= 0 || isNaN(age)) {
+        console.log("Inserisci un età valida");
+    } else if (age < 10){
+        console.log("L'età minima per viaggiare è 10 anni");
+    } else {
+        break;
+    }
+}
+
 const ageAsInt = parseInt(ageAsString);
 
 
