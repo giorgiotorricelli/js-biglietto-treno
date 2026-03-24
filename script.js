@@ -13,7 +13,7 @@ while (true) {
 
 const kilometersAsInt = parseInt(kilometersAsString);
 
-let ageAsString
+let ageAsString;
 
 while (true) {
     ageAsString = prompt("inserisci la tua età: ");
